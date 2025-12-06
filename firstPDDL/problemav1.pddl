@@ -1,0 +1,13 @@
+(define (problem problemav1)
+  (:domain robot-limpieza)
+  (:objects r1 - robot aula1 aula2 aula3 - aula residuos - ubicacion b1 - bolsa)
+  (:init
+    (en r1 aula2) (robot-libre r1)
+    (adyacente aula1 aula2) (adyacente aula2 aula1)
+    (adyacente aula2 aula3) (adyacente aula3 aula2)
+    (adyacente aula3 residuos) (adyacente residuos aula3)
+    (sucia aula1) (limpia aula2) (limpia aula3)
+    (bolsa-en b1 aula1)
+  )
+  (:goal (and (limpia aula1) (limpia aula2) (limpia aula3) (bolsa-depositada b1)))
+)

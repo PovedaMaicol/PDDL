@@ -49,6 +49,9 @@
    (limpia aula3)
    
    ;; No debe haber bolsas en las aulas
-   ;; 
+     (bolsa-depositada b1)
+  (bolsa-depositada b2)
+  (bolsa-depositada b3)
+  (bolsa-depositada b4)
  ))
 )
